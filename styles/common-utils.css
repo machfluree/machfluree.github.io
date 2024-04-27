@@ -1,0 +1,72 @@
+/* Texts and Typography */
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+
+
+
+/* Button Styles */
+.btn {
+  position: relative;
+  padding: 0.64rem 1rem;
+  font-weight: 600;
+  border: 0px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--black);
+}
+.btn-black {
+  background-color: var(--black);
+  color: var(--white);
+}
+.btn-white {
+  background-color: var(--white);
+  color: var(--black);
+}
+.btn:hover {
+  box-shadow: 8px 8px rgb(255, 220, 130, 0.42);
+}
+/* .btn:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 220, 130);
+  border-radius: 8px;
+  z-index: -1;
+} */
+.btn-sm {
+  font-size: 12px !important;
+  padding: 0.32rem 0.72rem !important;
+}
+.btn-badge {
+  font-size: 11px !important;
+  padding: 0.18rem 0.56rem !important;
+}
+.btn-group {
+  position: relative;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.btn-group .label {
+  font-weight: 600;
+  font-size: 14px;
+}

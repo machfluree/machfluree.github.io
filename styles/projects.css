@@ -1,0 +1,59 @@
+.project-card {
+  min-height: 18rem;
+  max-width: 18rem;
+  border-radius: 1rem;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.project-card .project-img {
+  min-height: 10rem;
+  border-radius: 1rem;
+}
+
+.project-card .project-details {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding: 1rem 0 0;
+  border-radius: 1rem;
+  /* background: linear-gradient(
+    360deg,
+    rgba(49, 49, 49, 1) 0%,
+    rgba(49, 49, 49, 0) 100%
+  ); */
+  /* background-color: rgba(0, 0, 0, .42); */
+  color: var(--black);
+}
+
+.project-card .project-details .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-card .project-details .desc {
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card .project-details .tech-stacks {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+}
+
+.project-img-1 {
+  background: url("https://plus.unsplash.com/premium_photo-1682310566465-61013a549353");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
