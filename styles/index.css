@@ -86,13 +86,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 #hero .hero-main-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background-color: rgb(40, 40, 43, .8);
+  background-color: rgb(40, 40, 43, .92);
   color: var(--white);
 }
 #hero .hero-main-container .hero-main {
@@ -109,7 +110,9 @@
   background-position: center;
   width: 16rem;
   height: 16rem;
-  border-radius: 50%;
+  border-radius: 1rem;
+  box-shadow: 1.24rem 1.24rem var(--box-shadow-clr);
+  rotate: -8deg;
 }
 #hero .hero-main-container .hero-main .hero-details {
   display: flex;
@@ -140,6 +143,18 @@
 #hero .hero-main-container .hero-main .hero-details .hero-links {
   display: flex;
   gap: 1rem;
+}
+
+.section-title .section-title-circle {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: var(--box-shadow-clr);
+  z-index: 0;
 }
 
 /* About Section */
@@ -269,28 +284,38 @@
   min-height: 48vh;
   display: flex;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1rem;
   background-color: var(--white);
   color: var(--black);
 }
 .horizontal-scroll-container .project-item .project-img {
-  min-width: 12rem;
+  min-width: 16rem;
   min-height: 100%;
+  border-radius: 1rem;
 }
 .horizontal-scroll-container .project-item .project-details {
-
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .horizontal-scroll-container .project-item .project-details .project-title {
-
+  font-weight: 700;
+  font-size: 16pt;
 }
 .horizontal-scroll-container .project-item .project-details  .project-desc {
 
 }
 .horizontal-scroll-container .project-item .project-details  .project-tech-stacks {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.48rem;
 }
 .horizontal-scroll-container .project-item .project-details .project-action-buttons {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
