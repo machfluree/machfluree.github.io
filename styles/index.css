@@ -2,6 +2,8 @@
 @import url("keyframes.css");
 @import url("common-utils.css");
 @import url("projects.css");
+@import url("floating-toolbar.css");
+@import url("modal.css");
 
 *,
 *::before,
@@ -12,6 +14,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: var(--black);
+  -ms-overflow-style: none;
+  scrollbar-width: 2px;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Navigation Menu Section */
 #navigation {
   position: sticky;
@@ -20,6 +32,7 @@
   z-index: 1;
   background-color: var(--white);
   font-size: 14px !important;
+  box-shadow: 0 4px 36px rgba(0, 0, 0, 0.2);
 }
 #navigation .nav-container {
   display: flex;
@@ -33,12 +46,19 @@
 }
 #navigation .nav-container .nav-logo {
   padding: 0.12rem 0.64rem;
-  background-color: var(--black);
-  color: var(--white);
+  height: 2.32rem;
+  width: 4.64rem;
+  background: url("/assets/svg/acdevs.logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: var(--black);
+  color: var(--white); */
+  /* color: var(--black); */
   border-radius: 0.48rem;
 }
 #navigation .nav-container .nav-logo p {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
 }
 #navigation .nav-container .nav-logo p .emphasize {
@@ -52,7 +72,6 @@
   gap: 2rem;
 }
 #navigation .nav-container ul.nav-link-container li.nav-link-item {
-  
 }
 #navigation .nav-container ul.nav-link-container li.nav-link-item a {
   text-decoration: none;
@@ -61,7 +80,11 @@
   padding: 0.64rem 1rem;
   position: relative;
 }
-#navigation .nav-container ul.nav-link-container li.nav-link-item:hover a::after {
+#navigation
+  .nav-container
+  ul.nav-link-container
+  li.nav-link-item:hover
+  a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -82,7 +105,7 @@
   width: 100%;
   min-height: 90vh;
   z-index: -100;
-  background: url('https://images.unsplash.com/photo-1487505983481-9aa2d9f9901a');
+  background: url("https://images.unsplash.com/photo-1487505983481-9aa2d9f9901a");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -93,7 +116,7 @@
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background-color: rgb(40, 40, 43, .92);
+  background-color: rgb(40, 40, 43, 0.92);
   color: var(--white);
 }
 #hero .hero-main-container .hero-main {
@@ -104,7 +127,7 @@
   gap: 4rem;
 }
 #hero .hero-main-container .hero-main .hero-avatar {
-  background: url('https://images.unsplash.com/photo-1536104968055-4d61aa56f46a');
+  background: url("https://images.unsplash.com/photo-1536104968055-4d61aa56f46a");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -161,6 +184,8 @@
 #about {
   position: relative;
   background-color: var(--white);
+  /* border-bottom-left-radius: 48% 24%;
+  border-bottom-right-radius: -72% 24%; */
 }
 #about .section-container {
   min-height: 100vh;
@@ -172,7 +197,6 @@
   align-items: center;
 }
 #about .section-wrapper {
-  
 }
 #about .section-container .section-title {
   position: relative;
@@ -204,9 +228,11 @@
   max-width: 1080px;
   margin-inline: auto;
   padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #projects .section-wrapper {
-  
 }
 #projects .section-container .section-title {
   position: relative;
@@ -276,12 +302,14 @@
 .horizontal-scroll-container {
   overflow-x: hidden;
   display: flex;
-  gap: 2rem;
-  border-radius: 1rem;
+  gap: 1rem;
+  /* border-radius: 1rem; */
 }
 .horizontal-scroll-container .project-item {
-  min-width: 42vw;
-  min-height: 48vh;
+  width: 48rem;
+  min-width: 48rem;
+  height: 24rem;
+  min-height: 24rem;
   display: flex;
   gap: 1rem;
   padding: 2rem;
@@ -303,19 +331,85 @@
   font-weight: 700;
   font-size: 16pt;
 }
-.horizontal-scroll-container .project-item .project-details  .project-desc {
-
+.horizontal-scroll-container .project-item .project-details .project-desc {
 }
-.horizontal-scroll-container .project-item .project-details  .project-tech-stacks {
+.horizontal-scroll-container
+  .project-item
+  .project-details
+  .project-tech-stacks {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.48rem;
 }
-.horizontal-scroll-container .project-item .project-details .project-action-buttons {
+.horizontal-scroll-container
+  .project-item
+  .project-details
+  .project-action-buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+#tech-stacks {
+  width: 100%;
+  background-color: var(--accent);
+}
+#tech-stacks .tech-stack-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+}
+#tech-stacks .tech-stack-container .tech-stack-item {
+  padding: 2rem;
+}
+
+/* create a spinning animation */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: var(--black);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .spinner {
+  width: 100px;
+  height: 100px;
+  background-color: var(--accent);
+  animation: spin 2s linear infinite;
+} */
+
+/* HTML: <div class="loader"></div> */
+.spinner {
+  width: 50px;
+  aspect-ratio: 1.1618;
+  --_g: no-repeat radial-gradient(farthest-side, var(--accent) 90%, var(--black));
+  background: var(--_g) 50% 0, var(--_g) 0 100%, var(--_g) 100% 100%;
+  background-size: 36% calc(36% * 1.1618);
+  animation: l16 0.64s infinite ease-in-out;
+}
+@keyframes l16 {
+  50%,
+  100% {
+    background-position: 100% 100%, 50% 0, 0 100%;
+  }
+}

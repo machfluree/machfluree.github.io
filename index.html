@@ -15,13 +15,46 @@
     <title>Machfluree.dev</title>
 
     <!-- Magic Mouse (works only on dark themes) -->
-    <!-- <script src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script> -->
+    <!-- <script
+      defer
+      src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"
+    ></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleModal(id) {
+        const modal = document.getElementById(id);
+        modal.classList.toggle("active");
+      }
+    </script>
   </head>
-  <body>
+  <div id="sharingan-loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+  <body class="">
+    <div class="floating-soclinks">
+      <!-- <div class="float-item">
+        <div class="float-facebook"></div>
+      </div> -->
+      <!-- <div class="float-item">
+        <div class="float-instagram"></div>
+      </div> -->
+      <div class="float-item">
+        <div class="float-twitter"></div>
+      </div>
+      <div class="float-item">
+        <div class="float-linkedin"></div>
+      </div>
+      <div class="float-item">
+        <div class="float-github"></div>
+      </div>
+    </div>
     <section id="navigation">
       <div class="nav-container">
         <div class="nav-logo">
-          <p><span class="emphasize">ac</span>.devs</p>
+          <!-- <p><span class="emphasize">ac</span>.devs</p> -->
         </div>
         <ul class="nav-link-container">
           <li class="nav-link-item">
@@ -49,14 +82,12 @@
           <div class="hero-main">
             <div class="hero-avatar"></div>
             <div class="hero-details">
-              <h1 class="hero-title">ailon.collado</h1>
-              <p class="hero-desc">
-                Your software developer who loves to create stuff in web with
-                <br />
-                enthusiasm and passion
-              </p>
+              <h1 class="hero-title text-lowercase">
+                <span id="userFirstname"></span>.<span id="userLastname"></span>
+              </h1>
+              <p class="hero-desc"></p>
               <div class="hero-links">
-                <button class="btn btn-accent btn-outlined">
+                <button class="btn btn-accent btn-outlined" onclick="toggleModal(`contact-us-modal`)">
                   Lets have a chat
                 </button>
                 <button class="btn btn-outlined">Download CV</button>
@@ -73,53 +104,47 @@
               <span class="">about</span>.me
             </div>
             <div class="section-content">
-              <p class="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                deserunt maxime culpa aut dolorem placeat dolor libero
-                molestias, accusamus aliquid sit. Tempore dolor molestias quia
-                odit? Ipsam odio corrupti ad! Accusamus veritatis ex distinctio,
-                labore omnis similique commodi nostrum modi facere consequuntur.
-                Quidem natus suscipit molestiae perferendis, mollitia qui ea
-                libero modi, harum commodi laudantium possimus veritatis
-                eligendi, voluptas deserunt? Magni esse accusamus officia cumque
-                assumenda aperiam, voluptas natus et tempora recusandae
-                excepturi! Totam est temporibus at illo natus officia velit rem
-                animi. Repellendus, nostrum distinctio cum aliquam officiis
-                consequatur! Impedit vero nihil fugit deserunt, velit porro
-                inventore eligendi distinctio, quas qui accusamus provident
-                suscipit temporibus minus recusandae dolorum mollitia culpa
-                quidem vel aut? Error illo maxime distinctio perspiciatis
-                ratione? Commodi perferendis, sint a cum eum minus praesentium
-                deserunt repellat minima eaque expedita vitae atque quaerat iure
-                eos est velit, debitis totam maiores assumenda, molestias ea.
-                Illum ab excepturi itaque. Excepturi libero esse deserunt ipsa,
-                vero veniam, quo quod sunt expedita velit, voluptatibus soluta
-                culpa non harum quisquam quas. Neque animi minima fuga aliquam
-                magnam iusto nesciunt natus atque esse. Aliquid similique nihil
-                dignissimos cumque, molestias distinctio dolorem fuga veniam
-                quod! Esse, magni in minus maiores eligendi nam non, facilis
-                molestiae dolor aliquam repudiandae, natus dolorum a cumque
-                sapiente ratione. Architecto numquam, aperiam obcaecati
-                accusamus ratione, blanditiis, molestias omnis quod provident et
-                eum! Suscipit tempora recusandae doloremque accusamus eius
-                reprehenderit aspernatur, saepe excepturi nisi iusto est animi.
-                Sapiente, aperiam doloremque? Illo odit quidem quam, tempore
-                ullam debitis laborum saepe provident excepturi nobis aliquid
-                distinctio delectus nam asperiores corporis expedita aperiam,
-                deserunt ducimus. Natus eos, neque voluptatem architecto animi
-                voluptates quam! Labore, illum eveniet vitae dignissimos ipsam
-                rerum consequatur repellendus ducimus sapiente delectus qui
-                corrupti cupiditate facilis recusandae reprehenderit ea aliquam
-                dolorum deleniti voluptas molestiae corporis magni fugit. Odit,
-                fuga facere.
-              </p>
-              <div class="btn-group">
+              <p id="aboutMe" class="text-justify font-weight-300 body-text-1"></p>
+              <!-- <div class="btn-group">
                 <span class="label">Links: </span>
                 <button class="btn btn-sm btn-black">Facebook</button>
                 <button class="btn btn-sm btn-black">Instagram</button>
                 <button class="btn btn-sm btn-black">Github</button>
                 <button class="btn btn-sm btn-black">LinkedIn</button>
-              </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tech-stacks">
+        <div class="scroller">
+          <div class="scroller__inner tech-stack-container">
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/html.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/css.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/javascript.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/typescript.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/react.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/vue.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/nodejs.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/expressjs.svg" alt="" />
+            </div>
+            <div class="tech-stack-item">
+              <img height="100" src="/assets/svg/php.svg" alt="" />
             </div>
           </div>
         </div>
@@ -231,11 +256,16 @@
             veritatis eos? Optio ut ipsam in magnam sunt dignissimos distinctio
             sint at, neque dolores nihil vero facere vitae?
           </div>
+          <!-- <p
+            class="text-uppercase text-overline text-spacer-1 font-weight-200 font-size-14"
+          >
+            Select a project:
+          </p> -->
           <div
             id="horizontal-scroll-container"
             class="horizontal-scroll-container"
           >
-            <div class="project-item">
+            <!-- <div class="project-item">
               <div class="project-img project-img-1"></div>
               <div class="project-details">
                 <div class="project-title">Online Voting System for the Supreme Student Council of ISPSC</div>
@@ -257,145 +287,114 @@
                   <button class="btn btn-accent">Live demo</button>
                 </div>
               </div>
-            </div>
-            <div class="project-item">
-              <div class="project-img project-img-1"></div>
-              <div class="project-details">
-                <div class="project-title">Kidron Security and Investigation Agency Website</div>
-                <div class="project-desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Enim, molestias. Autem impedit non aspernatur, accusantium
-                  deserunt ab voluptatem similique provident, consectetur qui
-                  obcaecati quia quasi placeat tenetur veniam alias sunt?
-                  Aperiam praesentium asperiores nihil animi nobis provident.
-                  Natus sequi itaque accusantium eveniet veritatis eos? Optio ut
-                  ipsam in magnam sunt dignissimos distinctio sint at, neque
-                  dolores nihil vero facere vitae?
-                </div>
-                <div class="project-tech-stacks"></div>
-                <div class="project-action-buttons">
-                  <button class="btn btn-accent">Live demo</button>
-                </div>
+            </div> -->
+            <button class="btn btn-white no-hover">Online Voting System</button>
+            <button class="btn btn-white no-hover">
+              Human Resource Information System
+            </button>
+            <button class="btn btn-white no-hover">
+              Restaurant Reservation System
+            </button>
+            <button class="btn btn-white no-hover">
+              Uzzapp - a chatting web app
+            </button>
+            <button class="btn btn-white no-hover">
+              Restaurant Reservation System
+            </button>
+            <button class="btn btn-white no-hover">
+              Restaurant Reservation System
+            </button>
+            <button class="btn btn-white no-hover">
+              Restaurant Reservation System
+            </button>
+          </div>
+          <div id="project-details-container">
+            <div class="project-header">
+              <div class="project-title" data-bind="project-title">Online Voting System</div>
+              <div class="project-toolbar">
+                <button class="btn btn-sm btn-black">View Source Code</button>
+                <button class="btn btn-sm btn-black">Live Demo</button>
               </div>
             </div>
-            <div class="project-item">
-              <div class="project-img project-img-1"></div>
-              <div class="project-details">
-                <div class="project-title">Bethany Hospital Human Resource Management and Information System</div>
-                <div class="project-desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Enim, molestias. Autem impedit non aspernatur, accusantium
-                  deserunt ab voluptatem similique provident, consectetur qui
-                  obcaecati quia quasi placeat tenetur veniam alias sunt?
-                  Aperiam praesentium asperiores nihil animi nobis provident.
-                  Natus sequi itaque accusantium eveniet veritatis eos? Optio ut
-                  ipsam in magnam sunt dignissimos distinctio sint at, neque
-                  dolores nihil vero facere vitae?
-                </div>
-                <div class="project-tech-stacks">
-                  
-                </div>
-                <div class="project-action-buttons">
-                  <button class="btn btn-accent">Live demo</button>
-                  <button class="btn btn-black">Github</button>
-                  <!-- <button class="btn btn-accent">Live demo</button> -->
-                </div>
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-img project-img-1"></div>
-              <div class="project-details">
-                <div class="project-title">Bethany Hospital Website</div>
-                <div class="project-desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Enim, molestias. Autem impedit non aspernatur, accusantium
-                  deserunt ab voluptatem similique provident, consectetur qui
-                  obcaecati quia quasi placeat tenetur veniam alias sunt?
-                  Aperiam praesentium asperiores nihil animi nobis provident.
-                  Natus sequi itaque accusantium eveniet veritatis eos? Optio ut
-                  ipsam in magnam sunt dignissimos distinctio sint at, neque
-                  dolores nihil vero facere vitae?
-                </div>
-                <div class="project-tech-stacks">
-                  
-                </div>
-                <div class="project-action-buttons">
-                  <button class="btn btn-accent">Live demo</button>
-                  <button class="btn btn-black">Github</button>
-                </div>
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-img project-img-1"></div>
-              <div class="project-details">
-                <div class="project-title">Pass-Sakay: QR Scanning System for Tracking COVID Patients</div>
-                <div class="project-desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Enim, molestias. Autem impedit non aspernatur, accusantium
-                  deserunt ab voluptatem similique provident, consectetur qui
-                  obcaecati quia quasi placeat tenetur veniam alias sunt?
-                  Aperiam praesentium asperiores nihil animi nobis provident.
-                  Natus sequi itaque accusantium eveniet veritatis eos? Optio ut
-                  ipsam in magnam sunt dignissimos distinctio sint at, neque
-                  dolores nihil vero facere vitae?
-                </div>
-                <div class="project-tech-stacks">
-                  
-                </div>
-                <div class="project-action-buttons">
-                  <button class="btn btn-accent">Live demo</button>
-                  <button class="btn btn-black">Github</button>
-                  <!-- <button class="btn btn-accent">Live demo</button> -->
-                </div>
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-img project-img-1"></div>
-              <div class="project-details">
-                <div class="project-title">Commchain</div>
-                <div class="project-desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Enim, molestias. Autem impedit non aspernatur, accusantium
-                  deserunt ab voluptatem similique provident, consectetur qui
-                  obcaecati quia quasi placeat tenetur veniam alias sunt?
-                  Aperiam praesentium asperiores nihil animi nobis provident.
-                  Natus sequi itaque accusantium eveniet veritatis eos? Optio ut
-                  ipsam in magnam sunt dignissimos distinctio sint at, neque
-                  dolores nihil vero facere vitae?
-                </div>
-                <div class="project-tech-stacks">
-                  
-                </div>
-                <div class="project-action-buttons">
-                  <button class="btn btn-accent">Live demo</button>
-                  <button class="btn btn-black">Github</button>
-                  <!-- <button class="btn btn-accent">Live demo</button> -->
-                </div>
+            <div class="project-text">
+              <p class="project-description" data-bind="project-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores, vel? Quae quas eveniet, magnam deleniti quo
+                voluptas, necessitatibus cumque dicta, cupiditate in voluptatum,
+                suscipit molestias. Sed, cumque! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Asperiores, vel? Quae quas
+                eveniet, magnam deleniti quo voluptas, necessitatibus cumque
+                dicta, cupiditate in voluptatum, suscipit molestias. Sed,
+                cumque!
+              </p>
+              <div class="project-tech-stack" data-bind="project-tech-stack">
+                <div class="chip">HTML</div>
+                <div class="chip">CSS</div>
+                <div class="chip">Javascript</div>
+                <div class="chip">PHP</div>
+                <div class="chip">MySQL</div>
+                <div class="chip">JQuery</div>
+                <div class="chip">Bootstrap</div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-  </body>
-  <script>
-    // const options = {
-    //   outerStyle: "circle",
-    //   hoverEffect: "circle-move",
-    //   hoverItemMove: false,
-    //   defaultCursor: false,
-    //   outerWidth: 30,
-    //   outerHeight: 30,
-    // };
-    // magicMouse(options);
 
-    const scrollContainer = document.getElementById(
-      "horizontal-scroll-container"
+    <!-- Modals -->
+    <div id="contact-us-modal" class="modal">
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Contact Us</p>
+          <button
+            class="btn btn-close"
+            onclick="toggleModal('contact-us-modal')"
+          >X</button>
+        </header>
+        <section class="modal-card-body"></section>
+      </div>
+    </div>
+  </body>
+  <script type="module">
+    import Data from "/js/index.js";
+    const loader = document.getElementById("sharingan-loader");
+    const timeout = setTimeout(
+      () => loader.setAttribute("class", "hidden"),
+      3000
     );
 
-    scrollContainer.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      scrollContainer.scrollLeft += evt.deltaY;
+    window.addEventListener("load", function () {
+      // magicMouse({
+      //   outerStyle: "circle",
+      //   hoverEffect: "circle-move",
+      //   hoverItemMove: false,
+      //   defaultCursor: false,
+      //   outerWidth: 30,
+      //   outerHeight: 30,
+      // });
+
+      const data = Data();
+
+      const userFirstname = document.getElementById("userFirstname");
+      if (userFirstname) userFirstname.innerText = data.user.firstname;
+
+      const userLastname = document.getElementById("userLastname");
+      if (userLastname) userLastname.innerText = data.user.lastname;
+
+      const userEmail = document.getElementById("userEmail");
+      userEmail && (userEmail.innerText = data.user.email);
+
+      const aboutMe = document.getElementById("aboutMe");
+      aboutMe && (aboutMe.innerText = data.user.about);
+
+      const scrollContainer = document.getElementById(
+        "horizontal-scroll-container"
+      );
+      scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+      });
     });
   </script>
 </html>
