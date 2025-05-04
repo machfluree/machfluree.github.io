@@ -1,400 +1,277 @@
+<!-- Why use JS Frameworks for such a small site? Its overkill, you could have just used it on an actual app lmao -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/index.css" />
-    <title>Machfluree.dev</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ailon Collado - Software Engineer">
+  <meta property="og:title" content="Ailon Collado - Portfolio" />
+  <meta property="og:description" content="Portfolio, devfolio, personal website, projects, skills, and contact info" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" crossorigin="anonymous">
+  <title>Ailon Collado - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
 
-    <!-- Magic Mouse (works only on dark themes) -->
-    <!-- <script
-      defer
-      src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"
-    ></script> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css"
-      rel="stylesheet"
-    />
-    <script>
-      function toggleModal(id) {
-        const modal = document.getElementById(id);
-        modal.classList.toggle("active");
-      }
-    </script>
-  </head>
-  <div id="sharingan-loader" class="loader">
-    <div class="spinner"></div>
-  </div>
-  <body class="">
-    <div class="floating-soclinks">
-      <!-- <div class="float-item">
-        <div class="float-facebook"></div>
-      </div> -->
-      <!-- <div class="float-item">
-        <div class="float-instagram"></div>
-      </div> -->
-      <div class="float-item">
-        <div class="float-twitter"></div>
+<body class="page-wrapper">
+  <aside class="side-detail-wrapper">
+    <header>
+      <p class="greeting-text">Hi there, I'm <strong>Ailon</strong>👋</p>
+      <h1 class="slogan-text">Building better web experiences — clean, fast, reliable.</h1>
+      <p class="profile-summary">
+        Strongly focused on creating smooth and efficient experiences that feel intuitive for
+        users. Projects built with care, aiming for performance, clarity, and long-term maintainability.
+      </p>
+      <div class="soft-skills-wrapper">
+        <div class="chip">Attention to detail</div>
+        <div class="chip">Analytical thinking</div>
+        <div class="chip">Collaboration</div>
       </div>
-      <div class="float-item">
-        <div class="float-linkedin"></div>
+    </header>
+    <!-- who tf needs navigation links? its just a one page site, scroll you lazy asshole! -->
+    <!-- <nav>
+      <ul class="nav-list">
+        <li><a href="#about">——— About</a></li>
+        <li><a href="#projects">——— Projects</a></li>
+        <li><a href="#skills">——— Skills</a></li>
+        <li><a href="#contact">——— Contact</a></li>
+      </ul>
+    </nav> -->
+    <footer id="main-footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ailoncollado/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+        <a href="https://github.com/machfluree" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="./assets/Ailon_Collado_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
       </div>
-      <div class="float-item">
-        <div class="float-github"></div>
-      </div>
-    </div>
-    <section id="navigation">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <!-- <p><span class="emphasize">ac</span>.devs</p> -->
+      <p>All rights reserved. &copy; 2025 Ailon Collado</p>
+    </footer>
+  </aside>
+  <main class="main-detail-wrapper">
+    <section>
+      <h4 class="section-title">ABOUT ME</h4>
+      <p class="desc-text">
+        I’m a Full-stack Web Developer with over five years of experience building clean, efficient, and scalable web
+        applications. I work with technologies like JavaScript, TypeScript, Vue.js, React.js, Node.js, and PHP, and I’m
+        confident in both frontend and backend development. I also have experience with databases such as PostgreSQL and
+        MongoDB, and I’m familiar with Docker and CI/CD workflows.
+      </p>
+      <br>
+      <p class="desc-text">
+        Over the years, I’ve contributed to a wide range of projects—from creating new features and improving
+        performance to fixing bugs and refactoring codebases for better maintainability. I enjoy solving technical
+        challenges, improving user experience, and working in collaborative environments where clean code and
+        reliability matter.
+      </p>
+      <br>
+      <p class="desc-text">
+        I’m passionate about continuous learning and always open to new tools and technologies. I take pride in writing
+        code that’s not only functional but also easy to read and scale. My goal is to build web solutions that are
+        fast, reliable, and truly helpful for the people who use them.
+      </p>
+    </section>
+    <section>
+      <h4 class="section-title">WORK EXPERIENCE</h4>
+      <div class="work-experience-wrapper">
+        <div class="work-experience-item">
+          <div class="work-experience-content">
+            <div class="work-experience-heading">
+              <p class="company-name">SunAlgo LLC.</p>
+              <p class="position"><em>Software Engineer</em></p>
+              <!-- <p class="year-span">Sept 2024 - Mar 2025</p> -->
+            </div>
+            <p class="job-desc">Resolved critical bugs and issues in staging and production environments, ensuring
+              seamless application performance and user satisfaction.</p>
+            <p class="job-desc">Designed, developed, and deployed optimized and scalable features, significantly
+              reducing the recurrence of bugs and enhancing product stability.</p>
+            <p class="job-desc">Actively contributed to agile stand-up meetings by delivering insightful updates,
+              innovative ideas, and actionable suggestions, driving productive discussions and better outcomes for the
+              software product.</p>
+            <p class="job-desc">Monitored and managed application error tracking tools (e.g., Airbrake) to identify and
+              resolve feature-breaking issues promptly, minimizing downtime and improving system reliability.</p>
+          </div>
         </div>
-        <ul class="nav-link-container">
-          <li class="nav-link-item">
-            <a href="#">About</a>
-          </li>
-          <li class="nav-link-item">
-            <a href="#">Projects</a>
-          </li>
-          <li class="nav-link-item">
-            <a href="#">Feedbacks</a>
-          </li>
-          <li class="nav-link-item">
-            <a href="#">Contact</a>
-          </li>
-          <li class="nav-link-item">
-            <a href="#">Home</a>
-          </li>
-        </ul>
+        <div class="work-experience-item">
+          <div class="work-experience-content">
+            <div class="work-experience-heading">
+              <p class="company-name">Nathan Digital (Nathan & Nathan)</p>
+              <p class="position"><em>Full-stack Web Developer</em></p>
+              <!-- <p class="year-span">May 2023 - Sept 2024</p> -->
+            </div>
+            <p class="job-desc">Systematically identified and implemented software requirements and features of a web
+              application catering to freelancers seeking opportunities in Dubai, UAE, ensuring the product's
+              reliability in alignment with user expectations.</p>
+            <p class="job-desc">Delivered prompt resolutions to critical software issues escalated by support staffs of
+              the web application tailored for freelancers, ensuring seamless functionality and user satisfaction.</p>
+            <p class="job-desc">Enhanced team efficiency by actively proposing pertinent ideas encompassing software
+              security, performance optimization, and user-friendly UI design. These contributions played a pivotal role
+              in the ongoing maintenance and enhancement of the software.</p>
+          </div>
+        </div>
+        <div class="work-experience-item">
+          <div class="work-experience-content">
+            <div class="work-experience-heading">
+              <p class="company-name">Dealerlion LLC. (Part-time)</p>
+              <p class="position"><em>Frontend Developer</em></p>
+              <!-- <p class="year-span">Nov 2022 - Apr 2023</p> -->
+            </div>
+            <p class="job-desc">Developed and implemented user-facing modules and features of a web application tailored
+              for automobile and car parts dealers.</p>
+            <p class="job-desc">Demonstrated a strong teamwork by engaging more with the team through peer coding
+              sessions, peer code reviews, and requirements gathering and analysis which allowed us to speed up our
+              workflows.</p>
+          </div>
+        </div>
+        <div class="work-experience-item">
+          <div class="work-experience-content">
+            <div class="work-experience-heading">
+              <p class="company-name">BCS Technology</p>
+              <p class="position"><em>Full-stack Developer</em></p>
+              <!-- <p class="year-span">Aug 2021 - May 2023</p> -->
+            </div>
+            <p class="job-desc">Developed software requirements and features aligned with UI/UX design and rectified
+              software defects of a prominent Philippine-based airline's risk management and fraud screening
+              application.</p>
+            <p class="job-desc">Diagnosed and resolved technical anomalies while optimizing the codebase of a web
+              application utilized by a renowned insurance enterprise in the Philippines, ensuring the system’s overall
+              performance and reliability.</p>
+            <p class="job-desc">Demonstrated strong teamwork abilities by engaging collaboratively to the team through
+              peer code reviews, peer programming sessions, sprint planning, and sprint retrospectives.</p>
+          </div>
+        </div>
+        <!-- <div class="work-experience-item">
+          <div class="work-experience-content">
+            <div class="work-experience-heading">
+              <p class="company-name">Bethany Hospital Inc.</p>
+              <p class="position"><em>IT Support Specialist</em></p>
+              <p class="year-span">Nov 2019 - Aug 2021</p>
+            </div>
+            <p class="job-desc">Skillfully debugged and restructured the pre-existing codebase of a comprehensive Human Resource Information System. Performed meticulous analysis and improvement to ensure heightened functionality and efficiency.</p>
+            <p class="job-desc">Conceptualized, designed, and developed a Minimum Viable Product (MVP) for the hospital website, employing PHP CodeIgniter as the foundational framework.</p>
+          </div>
+        </div> -->
       </div>
     </section>
-    <div id="wrapper">
-      <section id="hero">
-        <div class="hero-bg-image"></div>
-        <div class="hero-main-container">
-          <div class="hero-main">
-            <div class="hero-avatar"></div>
-            <div class="hero-details">
-              <h1 class="hero-title text-lowercase">
-                <span id="userFirstname"></span>.<span id="userLastname"></span>
-              </h1>
-              <p class="hero-desc"></p>
-              <div class="hero-links">
-                <button class="btn btn-accent btn-outlined" onclick="toggleModal(`contact-us-modal`)">
-                  Lets have a chat
-                </button>
-                <button class="btn btn-outlined">Download CV</button>
-              </div>
-            </div>
+    <section>
+      <h4 class="section-title">PROJECTS</h4>
+      <div class="projects-wrapper">
+        <p>Nothing to show here for now, my calculator and to-do list apps are kinda obsolete now (LMAO). I'm trying new
+          things
+          now, try visiting this section some other time.</p>
+        <!-- <div class="project-item">
+          <h5 class="project-title">LocoAI: Local AI Chat App — Mistral-Powered Assistant</h5>
+          <p class="project-desc">A lightweight, privacy-focused AI chat app built with Node.js, Express, and Ollama. It
+            runs entirely on your local machine using the quantized Mistral (Q4_K_M) model, with support for
+            conversational context memory — no cloud, no APIs, just local LLM magic.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div> -->
+    </section>
+    <section>
+      <h4 class="section-title">TECHNOLOGIES</h4>
+      <div class="tech-stack-wrapper">
+        <div class="tech-stack-item">
+          <p>Frontend development</p>
+          <div class="tech-stacks">
+            <div class="chip">HTML5</div>
+            <div class="chip">CSS3</div>
+            <div class="chip">Tailwind CSS</div>
+            <div class="chip">SASS / LESS</div>
+            <div class="chip">Bootstrap</div>
+            <div class="chip">Javascript (ES6+)</div>
+            <div class="chip">Typescript</div>
+            <div class="chip">ReactJS</div>
+            <div class="chip">NextJS</div>
+            <div class="chip">VueJS</div>
+            <div class="chip">NuxtJS</div>
+            <div class="chip">Material UI</div>
+            <div class="chip">Vuetify</div>
+            <div class="chip">Primevue</div>
           </div>
         </div>
-      </section>
-      <section id="about">
-        <div class="section-container">
-          <div class="section-wrapper">
-            <div class="section-title left">
-              <!-- <div class="section-title-circle"></div> -->
-              <span class="">about</span>.me
-            </div>
-            <div class="section-content">
-              <p id="aboutMe" class="text-justify font-weight-300 body-text-1"></p>
-              <!-- <div class="btn-group">
-                <span class="label">Links: </span>
-                <button class="btn btn-sm btn-black">Facebook</button>
-                <button class="btn btn-sm btn-black">Instagram</button>
-                <button class="btn btn-sm btn-black">Github</button>
-                <button class="btn btn-sm btn-black">LinkedIn</button>
-              </div> -->
-            </div>
+        <div class="tech-stack-item">
+          <p>Server-side development</p>
+          <div class="tech-stacks">
+            <div class="chip">NodeJS</div>
+            <div class="chip">ExpressJS</div>
+            <div class="chip">NestJS</div>
+            <div class="chip">PHP</div>
+            <div class="chip">Laravel</div>
+            <div class="chip">Codeigniter</div>
           </div>
         </div>
-      </section>
-      <section id="tech-stacks">
-        <div class="scroller">
-          <div class="scroller__inner tech-stack-container">
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/html.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/css.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/javascript.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/typescript.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/react.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/vue.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/nodejs.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/expressjs.svg" alt="" />
-            </div>
-            <div class="tech-stack-item">
-              <img height="100" src="/assets/svg/php.svg" alt="" />
-            </div>
+        <div class="tech-stack-item">
+          <p>Database</p>
+          <div class="tech-stacks">
+            <div class="chip">PostgreSQL</div>
+            <div class="chip">MySQL</div>
+            <div class="chip">MongoDB</div>
           </div>
         </div>
-      </section>
-      <!-- <section id="projects">
-        <div class="section-container">
-          <div class="section-wrapper">
-            <div class="section-title text-center">
-              my.<span class="">projects</span>
-            </div>
-            <div class="section-description text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique est praesentium, culpa, expedita quisquam facere, repellat necessitatibus atque rem beatae a! Ea nostrum sit, delectus tenetur quis aut est iure?
-              Molestiae earum fugiat quos architecto libero expedita? Neque tenetur nam quos blanditiis quod ullam! Similique, dicta? Necessitatibus dolor cumque amet modi exercitationem, odio praesentium veritatis delectus! Accusamus quas rerum beatae?
-            </div>
-            <div class="section-content">
-              <div class="project-card">
-                <div class="project-img project-img-1"></div>
-                <div class="project-details">
-                  <span class="title">Chattr AI</span>
-                  <span class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla qui nemo, eius dolor distinctio, omnis doloribus eligendi doloremque maiores provident dicta molestias. Itaque, quo quod? Ex modi voluptatem eaque.
-                  Tempore nesciunt error consequatur in laboriosam natus nemo officiis ad doloremque laborum, modi quod commodi suscipit sint quam recusandae ex quis optio harum, qui sunt esse! Ducimus eum quia vero?
-                  Itaque dolore vel cupiditate necessitatibus iste provident, nam alias voluptatem fugit impedit quisquam natus beatae perspiciatis exercitationem eaque consequuntur praesentium officia enim? Quidem quae odio at. Voluptatem reiciendis delectus ea?
-                  Reprehenderit maiores minus totam pariatur voluptates, corporis cumque possimus, aspernatur illo nemo veritatis molestias nostrum rerum neque dignissimos? Dignissimos, veritatis modi. Quos ratione, animi voluptatibus eaque suscipit atque? Tempore, aliquam!</span>
-                  <div class="tech-stacks">
-                    <button class="btn btn-badge btn-accent">HTML</button>
-                    <button class="btn btn-badge btn-accent">CSS</button>
-                    <button class="btn btn-badge btn-accent">Javascript</button>
-                    <button class="btn btn-badge btn-accent">PHP</button>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card">
-                <div class="project-img project-img-1"></div>
-                <div class="project-details">
-                  <span class="title">Human Resource Information System</span>
-                  <span class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla qui nemo, eius dolor distinctio, omnis doloribus eligendi doloremque maiores provident dicta molestias. Itaque, quo quod? Ex modi voluptatem eaque.
-                  Tempore nesciunt error consequatur in laboriosam natus nemo officiis ad doloremque laborum, modi quod commodi suscipit sint quam recusandae ex quis optio harum, qui sunt esse! Ducimus eum quia vero?
-                  Itaque dolore vel cupiditate necessitatibus iste provident, nam alias voluptatem fugit impedit quisquam natus beatae perspiciatis exercitationem eaque consequuntur praesentium officia enim? Quidem quae odio at. Voluptatem reiciendis delectus ea?
-                  Reprehenderit maiores minus totam pariatur voluptates, corporis cumque possimus, aspernatur illo nemo veritatis molestias nostrum rerum neque dignissimos? Dignissimos, veritatis modi. Quos ratione, animi voluptatibus eaque suscipit atque? Tempore, aliquam!</span>
-                  <div class="tech-stacks">
-                    <button class="btn btn-badge btn-accent">HTML</button>
-                    <button class="btn btn-badge btn-accent">CSS</button>
-                    <button class="btn btn-badge btn-accent">Javascript</button>
-                    <button class="btn btn-badge btn-accent">PHP</button>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card">
-                <div class="project-img project-img-1"></div>
-                <div class="project-details">
-                  <span class="title">Human Resource Information System</span>
-                  <span class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla qui nemo, eius dolor distinctio, omnis doloribus eligendi doloremque maiores provident dicta molestias. Itaque, quo quod? Ex modi voluptatem eaque.
-                  Tempore nesciunt error consequatur in laboriosam natus nemo officiis ad doloremque laborum, modi quod commodi suscipit sint quam recusandae ex quis optio harum, qui sunt esse! Ducimus eum quia vero?
-                  Itaque dolore vel cupiditate necessitatibus iste provident, nam alias voluptatem fugit impedit quisquam natus beatae perspiciatis exercitationem eaque consequuntur praesentium officia enim? Quidem quae odio at. Voluptatem reiciendis delectus ea?
-                  Reprehenderit maiores minus totam pariatur voluptates, corporis cumque possimus, aspernatur illo nemo veritatis molestias nostrum rerum neque dignissimos? Dignissimos, veritatis modi. Quos ratione, animi voluptatibus eaque suscipit atque? Tempore, aliquam!</span>
-                  <div class="tech-stacks">
-                    <button class="btn btn-badge btn-accent">HTML</button>
-                    <button class="btn btn-badge btn-accent">CSS</button>
-                    <button class="btn btn-badge btn-accent">Javascript</button>
-                    <button class="btn btn-badge btn-accent">PHP</button>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card">
-                <div class="project-img project-img-1"></div>
-                <div class="project-details">
-                  <span class="title">Human Resource Information System</span>
-                  <span class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla qui nemo, eius dolor distinctio, omnis doloribus eligendi doloremque maiores provident dicta molestias. Itaque, quo quod? Ex modi voluptatem eaque.
-                  Tempore nesciunt error consequatur in laboriosam natus nemo officiis ad doloremque laborum, modi quod commodi suscipit sint quam recusandae ex quis optio harum, qui sunt esse! Ducimus eum quia vero?
-                  Itaque dolore vel cupiditate necessitatibus iste provident, nam alias voluptatem fugit impedit quisquam natus beatae perspiciatis exercitationem eaque consequuntur praesentium officia enim? Quidem quae odio at. Voluptatem reiciendis delectus ea?
-                  Reprehenderit maiores minus totam pariatur voluptates, corporis cumque possimus, aspernatur illo nemo veritatis molestias nostrum rerum neque dignissimos? Dignissimos, veritatis modi. Quos ratione, animi voluptatibus eaque suscipit atque? Tempore, aliquam!</span>
-                  <div class="tech-stacks">
-                    <button class="btn btn-badge btn-accent">HTML</button>
-                    <button class="btn btn-badge btn-accent">CSS</button>
-                    <button class="btn btn-badge btn-accent">Javascript</button>
-                    <button class="btn btn-badge btn-accent">PHP</button>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card">
-                <div class="project-img project-img-1"></div>
-                <div class="project-details">
-                  <span class="title">Human Resource Information System</span>
-                  <span class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla qui nemo, eius dolor distinctio, omnis doloribus eligendi doloremque maiores provident dicta molestias. Itaque, quo quod? Ex modi voluptatem eaque.
-                  Tempore nesciunt error consequatur in laboriosam natus nemo officiis ad doloremque laborum, modi quod commodi suscipit sint quam recusandae ex quis optio harum, qui sunt esse! Ducimus eum quia vero?
-                  Itaque dolore vel cupiditate necessitatibus iste provident, nam alias voluptatem fugit impedit quisquam natus beatae perspiciatis exercitationem eaque consequuntur praesentium officia enim? Quidem quae odio at. Voluptatem reiciendis delectus ea?
-                  Reprehenderit maiores minus totam pariatur voluptates, corporis cumque possimus, aspernatur illo nemo veritatis molestias nostrum rerum neque dignissimos? Dignissimos, veritatis modi. Quos ratione, animi voluptatibus eaque suscipit atque? Tempore, aliquam!</span>
-                  <div class="tech-stacks">
-                    <button class="btn btn-badge btn-accent">HTML</button>
-                    <button class="btn btn-badge btn-accent">CSS</button>
-                    <button class="btn btn-badge btn-accent">Javascript</button>
-                    <button class="btn btn-badge btn-accent">PHP</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="tech-stack-item">
+          <p>Object Relational Mapping Tools</p>
+          <div class="tech-stacks">
+            <div class="chip">Prisma</div>
+            <div class="chip">Sequelize</div>
+            <div class="chip">Mongoose</div>
           </div>
         </div>
-      </section> -->
-      <section id="project">
-        <div class="project-container">
-          <div class="section-title">my.projects</div>
-          <div class="section-description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim,
-            molestias. Autem impedit non aspernatur, accusantium deserunt ab
-            voluptatem similique provident, consectetur qui obcaecati quia quasi
-            placeat tenetur veniam alias sunt? Aperiam praesentium asperiores
-            nihil animi nobis provident. Natus sequi itaque accusantium eveniet
-            veritatis eos? Optio ut ipsam in magnam sunt dignissimos distinctio
-            sint at, neque dolores nihil vero facere vitae?
-          </div>
-          <!-- <p
-            class="text-uppercase text-overline text-spacer-1 font-weight-200 font-size-14"
-          >
-            Select a project:
-          </p> -->
-          <div
-            id="horizontal-scroll-container"
-            class="horizontal-scroll-container"
-          >
-            <!-- <div class="project-item">
-              <div class="project-img project-img-1"></div>
-              <div class="project-details">
-                <div class="project-title">Online Voting System for the Supreme Student Council of ISPSC</div>
-                <div class="project-desc">
-                  A project that allows student to vote their SSC leaders on their mobile, tablet, or computer devices
-                  during the SSC Election. Instead of the typical election which uses paper ballot, this project intends
-                  to digitize the whole SSC election process.
-                </div>
-                <div class="project-tech-stacks">
-                  <div class="chip">HTML</div>
-                  <div class="chip">CSS</div>
-                  <div class="chip">Javascript</div>
-                  <div class="chip">PHP</div>
-                  <div class="chip">MySQL</div>
-                  <div class="chip">JQuery</div>
-                  <div class="chip">Bootstrap</div>
-                </div>
-                <div class="project-action-buttons">
-                  <button class="btn btn-accent">Live demo</button>
-                </div>
-              </div>
-            </div> -->
-            <button class="btn btn-white no-hover">Online Voting System</button>
-            <button class="btn btn-white no-hover">
-              Human Resource Information System
-            </button>
-            <button class="btn btn-white no-hover">
-              Restaurant Reservation System
-            </button>
-            <button class="btn btn-white no-hover">
-              Uzzapp - a chatting web app
-            </button>
-            <button class="btn btn-white no-hover">
-              Restaurant Reservation System
-            </button>
-            <button class="btn btn-white no-hover">
-              Restaurant Reservation System
-            </button>
-            <button class="btn btn-white no-hover">
-              Restaurant Reservation System
-            </button>
-          </div>
-          <div id="project-details-container">
-            <div class="project-header">
-              <div class="project-title" data-bind="project-title">Online Voting System</div>
-              <div class="project-toolbar">
-                <button class="btn btn-sm btn-black">View Source Code</button>
-                <button class="btn btn-sm btn-black">Live Demo</button>
-              </div>
-            </div>
-            <div class="project-text">
-              <p class="project-description" data-bind="project-description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Asperiores, vel? Quae quas eveniet, magnam deleniti quo
-                voluptas, necessitatibus cumque dicta, cupiditate in voluptatum,
-                suscipit molestias. Sed, cumque! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Asperiores, vel? Quae quas
-                eveniet, magnam deleniti quo voluptas, necessitatibus cumque
-                dicta, cupiditate in voluptatum, suscipit molestias. Sed,
-                cumque!
-              </p>
-              <div class="project-tech-stack" data-bind="project-tech-stack">
-                <div class="chip">HTML</div>
-                <div class="chip">CSS</div>
-                <div class="chip">Javascript</div>
-                <div class="chip">PHP</div>
-                <div class="chip">MySQL</div>
-                <div class="chip">JQuery</div>
-                <div class="chip">Bootstrap</div>
-              </div>
-            </div>
+        <div class="tech-stack-item">
+          <p>Others</p>
+          <div class="tech-stacks">
+            <div class="chip">AWS S3</div>
+            <div class="chip">AWS RDS</div>
+            <div class="chip">AWS Lambda Functions</div>
+            <div class="chip">Docker</div>
+            <div class="chip">Unit Testing</div>
+            <div class="chip">End-to-end Testing</div>
+            <div class="chip">Postman</div>
+            <div class="chip">Swagger</div>
+            <div class="chip">Version Control (Git)</div>
+            <div class="chip">Agile (Scrum)</div>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- Modals -->
-    <div id="contact-us-modal" class="modal">
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Contact Us</p>
-          <button
-            class="btn btn-close"
-            onclick="toggleModal('contact-us-modal')"
-          >X</button>
-        </header>
-        <section class="modal-card-body"></section>
       </div>
-    </div>
-  </body>
-  <script type="module">
-    import Data from "/js/index.js";
-    const loader = document.getElementById("sharingan-loader");
-    const timeout = setTimeout(
-      () => loader.setAttribute("class", "hidden"),
-      3000
-    );
+    </section>
+    <section>
+      <h4 class="section-title">CONTACT ME</h4>
+      <p class="desc-text">
+        Interested in collaborating or have a question? Feel free to reach out! I'm always open to discussing new
+        projects, creative ideas, or opportunities to be part of your vision. Let's connect and explore the
+        possibilities
+        together!<br />
+      </p>
+      <div class="open-for-opportunity">I’m currently open to new opportunities.</div>
+      <form class="contact-form" action="mailto:ailoncollado.dev@gmail.com">
+        <div class="contact-item">
+          <p class="contact-label">Preferred name</p>
+          <p class="contact-value"><input type="text" value="" placeholder="What should I call you?" required /></p>
+        </div>
+        <div class="contact-item">
+          <p class="contact-label">Email address</p>
+          <p class="contact-value">
+            <input type="email" value="" placeholder="Your active email address where I can share something nice :)"
+              required />
+          </p>
+        </div>
+        <div class="contact-item">
+          <p class="contact-label">Your message</p>
+          <p class="contact-value"><textarea name="" id="" placeholder="Write your thoughts here..."></textarea></p>
+        </div>
+        <button type="submit" class="send-message-btn" onclick="sendMessage()">Send message</button>
+      </form>
+    </section>
+    <footer id="pseudo-footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ailoncollado/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+        <a href="https://github.com/machfluree" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="./assets/Ailon_Collado_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+      </div>
+      <p>All rights reserved. &copy; 2025 Ailon Collado</p>
+    </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
 
-    window.addEventListener("load", function () {
-      // magicMouse({
-      //   outerStyle: "circle",
-      //   hoverEffect: "circle-move",
-      //   hoverItemMove: false,
-      //   defaultCursor: false,
-      //   outerWidth: 30,
-      //   outerHeight: 30,
-      // });
-
-      const data = Data();
-
-      const userFirstname = document.getElementById("userFirstname");
-      if (userFirstname) userFirstname.innerText = data.user.firstname;
-
-      const userLastname = document.getElementById("userLastname");
-      if (userLastname) userLastname.innerText = data.user.lastname;
-
-      const userEmail = document.getElementById("userEmail");
-      userEmail && (userEmail.innerText = data.user.email);
-
-      const aboutMe = document.getElementById("aboutMe");
-      aboutMe && (aboutMe.innerText = data.user.about);
-
-      const scrollContainer = document.getElementById(
-        "horizontal-scroll-container"
-      );
-      scrollContainer.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer.scrollLeft += evt.deltaY;
-      });
-    });
-  </script>
 </html>

@@ -1,15 +1,12 @@
-# portfolio
+# This is just a portfolio
+Seriously, what else do you need for a portfolio? It has:
+- a short intro
+- what are the previous experiences
+- what projects have I worked on
+- and ways to contact me
 
-A simple web portfolio built using plain HTML, CSS, and Javascript.
-No shit added.
-
-Should you wish to fork or clone this, here are some pointers you need to know:
-
-`js/data/`
-- contains all the data for your portfolio
-
-`js/custom`
-- contains all your custom js shit
-
-`css`
-- contains all your styles
+### Written using plain HTML and CSS. Wait, what? Why?
+- Seriously, why use other JS frameworks for such a simple site?????
+- It does the same thing!
+- It loads fast, its readable, its responsive.
+- Most importantly, it works on every goddamn browsers!
