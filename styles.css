@@ -69,15 +69,14 @@ html {
 	height: 100%;
 	max-width: 100%;
 	font-family: "Inter", sans-serif;
-	font-size: 11pt;
-	background-color: #faf9f6;
+	/* font-size: 11pt; */
+	background-color: #fffff2
 }
 
 footer {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	background-color: #faf9f6;
 }
 footer .social-links {
 	display: flex;
@@ -170,7 +169,7 @@ ol {
 }
 .desc-text {
 	font-weight: 400;
-	font-size: 11pt;
+	font-size: 1.12rem;
 	line-height: 2.4ch;
 	color: var(--text-color);
 }
@@ -181,11 +180,11 @@ ol {
 }
 .slogan-text {
 	font-weight: 800;
-	font-size: 2rem;
+	font-size: 2.24rem;
 }
 .profile-summary {
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: 1.12rem;
 	margin-top: 1rem;
 	color: var(--text-color);
 }
@@ -193,12 +192,13 @@ ol {
 .work-experience-wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: 1.64rem;
+	gap: 2rem;
 }
 .work-experience-wrapper .work-experience-item {
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
+	margin-bottom: 1rem;
 }
 .work-experience-wrapper
 	.work-experience-item
