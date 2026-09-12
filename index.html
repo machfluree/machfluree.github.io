@@ -1,322 +1,299 @@
-<!-- Why use JS Frameworks for such a small site? Its overkill, you could have just used it on an actual app lmao -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ailon Collado - Software Engineer">
-  <meta property="og:title" content="Machfluree - Portfolio" />
-  <meta property="og:description" content="Portfolio, devfolio, personal website, projects, skills, and contact info" />
+  <meta name="description"
+    content="Ailon Collado — full-stack software engineer focused on backend systems, APIs, and reliable releases.">
+  <meta property="og:title" content="Ailon Collado" />
+  <meta property="og:description" content="Portfolio, experience, and contact info" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
     rel="stylesheet" crossorigin="anonymous">
-  <title>Ailon Collado - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>machfluree@portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js"></script>
 </head>
 
-<body class="page-wrapper">
-  <aside class="side-detail-wrapper">
-    <header>
-      <p class="greeting-text">Hi there, I'm <strong>Machfluree</strong>👋</p>
-      <h1 class="slogan-text">Building better web experiences — clean, fast, reliable.</h1>
-      <p class="profile-summary">
-        Strongly focused on creating smooth and efficient experiences that feel intuitive for
-        users. Projects built with care, aiming for performance, clarity, and long-term maintainability.
-      </p>
-      <div class="soft-skills-wrapper">
-        <div class="chip">Attention to detail</div>
-        <div class="chip">Analytical thinking</div>
-        <div class="chip">Collaboration</div>
-      </div>
-    </header>
-    <!-- who tf needs navigation links? its just a one page site, scroll you lazy asshole! -->
-    <!-- <nav>
-      <ul class="nav-list">
-        <li><a href="#about">——— About</a></li>
-        <li><a href="#projects">——— Projects</a></li>
-        <li><a href="#skills">——— Skills</a></li>
-        <li><a href="#contact">——— Contact</a></li>
-      </ul>
-    </nav> -->
-    <footer id="main-footer">
-      <div class="social-links">
-        <!-- <a href="https://linkedin.com/in/ailoncollado" target="_blank" rel="noopener noreferrer">Linkedin</a> -->
-        <a href="https://github.com/machfluree" target="_blank" rel="noopener noreferrer">Github</a>
-        <!-- <a href="./assets/Ailon_Collado_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-      </div> -->
-      <p>All rights reserved. &copy; 2025 Machfluree</p>
-    </footer>
-  </aside>
-  <main class="main-detail-wrapper">
-    <section>
-      <h4 class="section-title">ABOUT ME</h4>
-      <p class="desc-text">
-        I’m a Full-stack Web Developer with over five years of experience building clean, efficient, and scalable web
-        applications. I work with technologies like JavaScript, TypeScript, Vue.js, React.js, Node.js, and PHP, and I’m
-        confident in both frontend and backend development. I also have experience with databases such as PostgreSQL and
-        MongoDB, and I’m familiar with Docker and CI/CD workflows.
-      </p>
-      <br>
-      <p class="desc-text">
-        Over the years, I’ve contributed to a wide range of projects—from creating new features and improving
-        performance to fixing bugs and refactoring codebases for better maintainability. I enjoy solving technical
-        challenges, improving user experience, and working in collaborative environments where clean code and
-        reliability matter.
-      </p>
-      <br>
-      <p class="desc-text">
-        I’m passionate about continuous learning and always open to new tools and technologies. I take pride in writing
-        code that’s not only functional but also easy to read and scale. My goal is to build web solutions that are
-        fast, reliable, and truly helpful for the people who use them.
-      </p>
-    </section>
-    <section>
-      <h4 class="section-title">WORK EXPERIENCE</h4>
-      <div class="work-experience-wrapper">
-        <div class="work-experience-item">
-          <div class="work-experience-content">
-            <div class="work-experience-heading">
-              <p class="company-name">Career TEAM</p>
-              <p class="position"><em>Software Engineer</em></p>
-              <!-- <p class="year-span">Sept 2024 - Mar 2025</p> -->
-            </div>
-            <p class="desc-text">
-              Executed feature development and bug fixes based on product team tickets, ensuring timely 
-              and high-quality delivery. Proactively enhanced application performance by refactoring legacy code 
-              and supported teammates through code reviews and resolving blockers.
-            </p>
-            <div class="tech-stacks">
-              <div class="chip">Javascript</div>
-              <div class="chip">Typescript</div>
-              <div class="chip">NextJS</div>
-              <div class="chip">NodeJS</div>
-              <div class="chip">NestJS</div>
-              <div class="chip">MongoDB</div>
-            </div>
-          </div>
-        </div>
-        <div class="work-experience-item">
-          <div class="work-experience-content">
-            <div class="work-experience-heading">
-              <p class="company-name">SunAlgo LLC.</p>
-              <p class="position"><em>Software Engineer</em></p>
-              <!-- <p class="year-span">Sept 2024 - Mar 2025</p> -->
-            </div>
-            <p class="desc-text">
-              Effectively contributed to improving application stability by resolving critical issues, developing
-              scalable features, and proactively monitoring system errors. Participated in agile processes, offering
-              valuable input that supported team productivity and product quality.
-            </p>
-            <div class="tech-stacks">
-              <div class="chip">Javascript</div>
-              <div class="chip">Typescript</div>
-              <div class="chip">ReactJS</div>
-              <div class="chip">VueJS</div>
-              <div class="chip">NuxtJS</div>
-              <div class="chip">NodeJS</div>
-              <div class="chip">ExpressJS</div>
-              <div class="chip">PostgreSQL</div>
-            </div>
-          </div>
-        </div>
-        <div class="work-experience-item">
-          <div class="work-experience-content">
-            <div class="work-experience-heading">
-              <p class="company-name">Nathan Digital (Nathan & Nathan)</p>
-              <p class="position"><em>Full-stack Web Developer</em></p>
-              <!-- <p class="year-span">May 2023 - Sept 2024</p> -->
-            </div>
-            <p class="desc-text">
-              Contributed to the development and continuous improvement of a web application for freelancers by
-              implementing key features, resolving critical issues, and aligning the product with user needs. Actively
-              supported system reliability and team performance through ideas focused on security, optimization, and
-              user experience.
-            </p>
-            <div class="tech-stacks">
-              <div class="chip">Javascript</div>
-              <div class="chip">VueJS</div>
-              <div class="chip">NuxtJS</div>
-              <div class="chip">NextJS</div>
-              <div class="chip">NodeJS</div>
-              <div class="chip">ExpressJS</div>
-              <div class="chip">MongoDB</div>
-            </div>
-          </div>
-        </div>
-        <div class="work-experience-item">
-          <div class="work-experience-content">
-            <div class="work-experience-heading">
-              <p class="company-name">Dealerlion LLC.</p>
-              <p class="position"><em>Frontend Developer</em></p>
-              <!-- <p class="year-span">Nov 2022 - Apr 2023</p> -->
-            </div>
-            <p class="desc-text">
-              Built user-facing features for a web application serving automobile and car parts dealers, while actively
-              collaborating with the team through peer coding, reviews, and requirement analysis to improve development
-              efficiency.
-            </p>
-            <div class="tech-stacks">
-              <div class="chip">Javascript</div>
-              <div class="chip">Tailwind CSS</div>
-              <div class="chip">VueJS</div>
-              <div class="chip">NuxtJS</div>
-            </div>
-          </div>
-        </div>
-        <div class="work-experience-item">
-          <div class="work-experience-content">
-            <div class="work-experience-heading">
-              <p class="company-name"><a href="https://bcstechnology.com.au/" target="_blank"
-                  rel="noopener noreferrer">BCS Technology</a></p>
-              <p class="position"><em>Full-stack Developer</em></p>
-              <!-- <p class="year-span">Aug 2021 - May 2023</p> -->
-            </div>
-            <p class="desc-text">
-              Contributed to the development and optimization of web applications for major Philippine-based enterprises
-              by aligning features with UI/UX standards, fixing defects, and enhancing system performance. Collaborated
-              closely with the team through code reviews, pair programming, and agile ceremonies to ensure smooth and
-              efficient development cycles.
-            </p>
-            <div class="tech-stacks">
-              <div class="chip">Javascript</div>
-              <div class="chip">Typescript</div>
-              <div class="chip">ReactJS</div>
-              <div class="chip">NodeJS</div>
-              <div class="chip">ExpressJS</div>
-              <div class="chip">SQL</div>
-              <div class="chip">MongoDB</div>
-              <div class="chip">Angular</div>
-              <div class="chip">APIGEE</div>
-              <div class="chip">.Net (C#)</div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="work-experience-item">
-          <div class="work-experience-content">
-            <div class="work-experience-heading">
-              <p class="company-name">Bethany Hospital Inc.</p>
-              <p class="position"><em>IT Support Specialist</em></p>
-              <p class="year-span">Nov 2019 - Aug 2021</p>
-            </div>
-            <p class="job-desc">Skillfully debugged and restructured the pre-existing codebase of a comprehensive Human Resource Information System. Performed meticulous analysis and improvement to ensure heightened functionality and efficiency.</p>
-            <p class="job-desc">Conceptualized, designed, and developed a Minimum Viable Product (MVP) for the hospital website, employing PHP CodeIgniter as the foundational framework.</p>
-          </div>
-        </div> -->
-      </div>
-    </section>
-    <section>
-      <h4 class="section-title">PROJECTS</h4>
-      <div class="projects-wrapper">
-        <p>Nothing to show here for now, my calculator and to-do list apps are kinda obsolete now (LMAO). I'm trying new
-          things
-          now, try visiting this section some other time.</p>
-        <!-- <div class="project-item">
-          <h5 class="project-title">LocoAI: Local AI Chat App — Mistral-Powered Assistant</h5>
-          <p class="project-desc">A lightweight, privacy-focused AI chat app built with Node.js, Express, and Ollama. It
-            runs entirely on your local machine using the quantized Mistral (Q4_K_M) model, with support for
-            conversational context memory — no cloud, no APIs, just local LLM magic.</p>
-          <a href="#" class="project-link">View Project</a>
-        </div> -->
-    </section>
-    <section>
-      <h4 class="section-title">OTHER TECHNOLOGIES USED</h4>
-      <div class="tech-stack-wrapper">
-        <div class="tech-stack-item">
-          <p>Frontend development</p>
-          <div class="tech-stacks">
-            <div class="chip">HTML5</div>
-            <div class="chip">CSS3</div>
-            <div class="chip">SASS / LESS</div>
-            <div class="chip">Bootstrap</div>
-            <div class="chip">Material UI</div>
-            <div class="chip">Vuetify</div>
-            <div class="chip">Primevue</div>
-          </div>
-        </div>
-        <div class="tech-stack-item">
-          <p>Server-side development</p>
-          <div class="tech-stacks">
-            <div class="chip">NestJS</div>
-            <div class="chip">PHP</div>
-            <div class="chip">Laravel</div>
-            <div class="chip">Codeigniter</div>
-          </div>
-        </div>
-        <div class="tech-stack-item">
-          <p>Database</p>
-          <div class="tech-stacks">
-            <div class="chip">PostgreSQL</div>
-            <div class="chip">MySQL</div>
-            <div class="chip">MongoDB</div>
-          </div>
-        </div>
-        <div class="tech-stack-item">
-          <p>Object Relational Mapping Tools</p>
-          <div class="tech-stacks">
-            <div class="chip">Prisma</div>
-            <div class="chip">Sequelize</div>
-            <div class="chip">Mongoose</div>
-          </div>
-        </div>
-        <div class="tech-stack-item">
-          <p>Others</p>
-          <div class="tech-stacks">
-            <div class="chip">AWS S3</div>
-            <div class="chip">AWS RDS</div>
-            <div class="chip">AWS Lambda Functions</div>
-            <div class="chip">Docker</div>
-            <div class="chip">Unit Testing</div>
-            <div class="chip">End-to-end Testing</div>
-            <div class="chip">Postman</div>
-            <div class="chip">Swagger</div>
-            <div class="chip">Version Control (Git)</div>
-            <div class="chip">Github Actions</div>
-            <div class="chip">Jira</div>
-            <div class="chip">Agile (Scrum)</div>
-          </div>
+<body>
+
+  <div class="winbar">
+    <div class="winbar-dots"><span></span><span></span><span></span></div>
+    <p class="winbar-title">machfluree@portfolio: ~</p>
+    <div class="winbar-right">
+      <p class="winbar-status"><span class="pulse"></span>200 OK</p>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4">
+          </path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="identity">
+        <p class="prompt">whoami</p>
+        <p class="whoami-name" id="whoami-name"></p>
+        <h1 class="headline">Building "boring" full-stack web applications that works.</h1>
+        <p class="summary">
+          Focused on scalable systems, engineering standards, and reliable delivery. Currently serving as a tech lead at
+          Career TEAM, guiding code quality while mentoring engineers and owning the "boring" stuff.
+        </p>
+        <div class="skills-row">
+          <span class="tag">Full-stack Engineering</span>
+          <span class="tag">System Reliability</span>
+          <span class="tag">Delivery Ownership</span>
+          <span class="tag">Technical Leadership</span>
         </div>
       </div>
-    </section>
-    <section>
-      <h4 class="section-title">CONTACT ME</h4>
-      <p class="desc-text">
-        Interested in collaborating or have a question? Feel free to reach out! I'm always open to discussing new
-        projects, creative ideas, or opportunities to be part of your vision. Let's connect and explore the
-        possibilities
-        together!<br />
-      </p>
-      <div class="open-for-opportunity">I’m currently open to new opportunities.</div>
-      <form class="contact-form" action="">
-        <div class="contact-item">
-          <p class="contact-label">Preferred name</p>
-          <p class="contact-value"><input type="text" value="" placeholder="What should I call you?" required /></p>
+
+      <nav class="routes" aria-label="Sections">
+        <a href="#about" data-route="about"><span class="method get">GET</span><span class="path">/about</span><span
+            class="indicator"></span></a>
+        <a href="#experience" data-route="experience"><span class="method get">GET</span><span
+            class="path">/experience</span><span class="indicator"></span></a>
+        <a href="#projects" data-route="projects"><span class="method get">GET</span><span
+            class="path">/projects</span><span class="indicator"></span></a>
+        <a href="#stack" data-route="stack"><span class="method get">GET</span><span class="path">/stack</span><span
+            class="indicator"></span></a>
+        <a href="#contact" data-route="contact"><span class="method post">POST</span><span
+            class="path">/contact</span><span class="indicator"></span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/ailoncollado/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/machfluree" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
-        <div class="contact-item">
-          <p class="contact-label">Email address</p>
-          <p class="contact-value">
-            <input type="email" value="" placeholder="Your active email address where I can share something nice :)"
-              required />
-          </p>
+        <p class="copyright">© <span id="year"></span> Ailon Collado</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section id="about">
+        <p class="route-line"><span class="method get">GET</span><span class="path">/about</span><span
+            class="dots"></span><span class="status ok">200</span></p>
+        <h2 class="section-title">About</h2>
+        <p class="desc-text">
+          I'm a full-stack software engineer with 7+ years of experience, currently focused on technical 
+          leadership, backend systems, and scalable product development. I work primarily across the 
+          JavaScript/TypeScript ecosystem, building APIs, data-intensive applications, and reliable software 
+          delivery while guiding engineering standards through code reviews, architecture, releases, 
+          and mentorship. I'm looking to grow further into technical leadership — building better systems, 
+          helping engineers grow, and taking greater ownership of how products are designed and delivered.
+        </p>
+      </section>
+
+      <section id="experience">
+        <p class="route-line"><span class="method get">GET</span><span class="path">/experience</span><span
+            class="dots"></span><span class="status ok">200</span></p>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="company-name">Career TEAM <span class="current-badge">Current</span></p>
+            <p class="position">Software Engineer</p>
+            <p class="meta-line">Apr 2025 – Present · Connecticut, USA (Remote)</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Technical leadership through code reviews, architecture guidance, and engineering
+                standards.</p>
+              <p class="job-desc">Own release processes and deliver scalable features for data-intensive systems.</p>
+              <p class="job-desc">Mentor engineers and introduce AI-assisted tools to improve development workflows.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="company-name">SunAlgo</p>
+            <p class="position">Full-stack Software Engineer</p>
+            <p class="meta-line">Sept 2024 – Apr 2025 · California, USA (Remote)</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Built and shipped scalable features across the application stack.</p>
+              <p class="job-desc">Resolved critical issues and improved application stability through proactive
+                monitoring.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="company-name">Nathan Digital (Nathan &amp; Nathan)</p>
+            <p class="position">Full-stack Web Developer</p>
+            <p class="meta-line">May 2023 – Sept 2024 · Dubai, UAE (Remote)</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Developed features for a freelancer marketplace connecting talent with opportunities
+                in Dubai.</p>
+              <p class="job-desc">Diagnosed and resolved production issues to maintain platform reliability.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="company-name">Dealer Lion <span
+                style="font-weight:400; color:var(--ink-faint);">(Part-time)</span></p>
+            <p class="position">Frontend Developer</p>
+            <p class="meta-line">Nov 2022 – Apr 2023 · New York, USA (Remote)</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Built user-facing features for an automotive dealer platform.</p>
+              <p class="job-desc">Collaborated through code reviews, peer development, and requirements gathering.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="company-name">BCS Technology</p>
+            <p class="position">Full-stack Developer</p>
+            <p class="meta-line">Aug 2021 – May 2023 · Makati City, PH (Remote)</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Developed and maintained applications for airline risk management and fraud screening.
+              </p>
+              <p class="job-desc">Resolved performance and reliability issues for enterprise web applications.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="company-name">Bethany Hospital Incorporated</p>
+            <p class="position">IT Staff Programmer</p>
+            <p class="meta-line">Nov 2019 – Aug 2021 · La Union, PH</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Improved and maintained the hospital's Human Resource Information System.</p>
+              <p class="job-desc">Designed and built the hospital website using PHP CodeIgniter.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="company-name">Kidron Security &amp; Investigation Agency</p>
+            <p class="position">Web Developer</p>
+            <p class="meta-line">Jul 2019 – Nov 2019 · La Union, PH</p>
+            <div class="job-desc-list">
+              <p class="job-desc">Designed, developed, and deployed the agency's first web presence.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="contact-item">
-          <p class="contact-label">Your message</p>
-          <p class="contact-value"><textarea name="" id="" placeholder="Write your thoughts here..."></textarea></p>
+      </section>
+
+
+      <section id="projects">
+        <p class="route-line"><span class="method get">GET</span><span class="path">/projects</span><span
+            class="dots"></span><span class="status empty">204</span></p>
+        <h2 class="section-title">Projects</h2>
+        <div class="empty-state">
+          <p>Nothing public right now — most of what I've shipped recently lives in client repos under NDA. I'm working
+            on a couple of things I can open source; check back soon.</p>
+          <p>In the meantime, <a href="#stack">GET /stack</a> for what I build with, or see what's public on <a
+              href="https://github.com/machfluree" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
         </div>
-        <button type="button" class="send-message-btn">Send message</button>
-      </form>
-    </section>
-    <footer id="pseudo-footer">
-      <div class="social-links">
-        <!-- <a href="https://www.linkedin.com/in/ailoncollado/" target="_blank" rel="noopener noreferrer">Linkedin</a> -->
-        <a href="https://github.com/machfluree" target="_blank" rel="noopener noreferrer">Github</a>
-        <!-- <a href="./assets/Ailon_Collado_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-      </div> -->
-      <p>All rights reserved. &copy; 2025 Machfluree</p>
-    </footer>
-  </main>
-  <script src="index.js"></script>
+      </section>
+
+      <section id="stack">
+        <p class="route-line"><span class="method get">GET</span><span class="path">/stack</span><span
+            class="dots"></span><span class="status ok">200</span></p>
+        <h2 class="section-title">Stack</h2>
+        <div class="stack-groups">
+          <div class="stack-group">
+            <p class="stack-group-label">Backend &amp; APIs</p>
+            <div class="chips">
+              <span class="chip">JavaScript (ESM / CJS)</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Express.js</span>
+              <span class="chip">Socket.IO</span>
+              <span class="chip">PHP</span>
+              <span class="chip">Laravel</span>
+              <span class="chip">C#</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group-label">Databases &amp; Data Tools</p>
+            <div class="chips">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">MS SQL</span>
+              <span class="chip">Mongo Compass</span>
+              <span class="chip">DBeaver</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group-label">Frontend</p>
+            <div class="chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">React</span>
+              <span class="chip">Vue.js</span>
+              <span class="chip">Nuxt.js</span>
+              <span class="chip">jQuery</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">Vuetify</span>
+              <span class="chip">Material UI</span>
+              <span class="chip">shadcn/ui</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group-label">Cloud, Testing &amp; Tooling</p>
+            <div class="chips">
+              <span class="chip">Docker</span>
+              <span class="chip">AWS S3</span>
+              <span class="chip">AWS RDS</span>
+              <span class="chip">AWS Lambda</span>
+              <span class="chip">CI/CD (GitHub Actions)</span>
+              <span class="chip">Git (GitHub, Bitbucket)</span>
+              <span class="chip">Unit Testing</span>
+              <span class="chip">Vitest</span>
+              <span class="chip">Cypress</span>
+              <span class="chip">Biome</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Swagger</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Airbrake</span>
+              <span class="chip">Agile (Scrum)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="route-line"><span class="method post">POST</span><span class="path">/contact</span><span
+            class="dots"></span><span class="status ok">201</span></p>
+        <h2 class="section-title">Contact</h2>
+        <p class="desc-text">Have something backend-shaped, or just want to say hi? Send a message and I'll get back to
+          you.</p>
+
+        <form class="contact-form" id="contact-form">
+          <div class="field">
+            <label for="name">Preferred name</label>
+            <input type="text" id="name" name="name" placeholder="What should I call you?" required />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Where can I reply?" required />
+          </div>
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Write your thoughts here..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="send-btn">Send message</button>
+            <p class="form-status" id="form-status">Opens in your email client.</p>
+          </div>
+        </form>
+
+        <div class="direct-email">
+          <p>Or reach me directly at <span class="email-value" id="email-value">ailoncollado.dev@gmail.com</span></p>
+          <button class="copy-btn" id="copy-email-btn" type="button">Copy</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
 </body>
 
 </html>
